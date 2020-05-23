@@ -1,0 +1,35 @@
+{
+  "name": "typescript-excercise",
+  "version": "1.0.0",
+  "description": "Typescript excercise solutions",
+  "main": "index.js",
+  "dependencies": {
+    "@types/chai": "^4.2.0",
+    "@types/mz": "^0.0.32",
+    "@types/node": "^12.6.8",
+    "chai": "^4.2.0",
+    "chalk": "^2.4.2",
+    "mz": "^2.7.0",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.5.3"
+  },
+  "scripts": {
+    "0": "ts-node src/excercise_1.ts",
+    "1": "ts-node src/excercise_2.ts",
+    "2": "ts-node src/excercise_3.ts",
+    "3": "ts-node src/excercise_4.ts",
+    "4": "ts-node src/excercise_5.ts",
+    "5": "ts-node src/excercise_6.ts",
+    "6": "ts-node src/excercise_7.ts",
+    "7": "ts-node src/excercise_8.ts",
+    "8": "ts-node src/excercise_9.ts",
+    "9": "ts-node src/excercise_10.ts",
+    "10": "ts-node src/excercise_11.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com-junip:junipdewan/typescript-excercise.git"
+  },
+  "author": "Junip Dewan <junipd2@gmail.com>",
+  "license": "MIT"
+}
