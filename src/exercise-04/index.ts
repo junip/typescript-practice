@@ -84,6 +84,9 @@ const persons: Person[] = [
 const isAdmin = (person: Person): person is Admin => person.type === 'admin';
 const isUser = (person: Person): person is User => person.type === 'user';
 
+
+type userAge = Pick<Person, 'age'>
+
 function logPerson(person: Person) {
     let additionalInformation: string = '';
     if (isAdmin(person)) {
@@ -95,7 +98,7 @@ function logPerson(person: Person) {
     console.log(` - ${chalk.green(person.name)}, ${person.age}, ${additionalInformation}`);
 }
 
-function filterUsers(persons: Person[], criteria: User): User[] {
+function filterUsers(persons: Person[], criteria: userAge): User[] {
     return persons.filter(isUser).filter((user) => {
         let criteriaKeys = Object.keys(criteria) as (keyof User)[];
         return criteriaKeys.every((fieldName) => {
