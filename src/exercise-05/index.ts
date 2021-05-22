@@ -13,7 +13,7 @@ Exercise:
     and return User[] when personType='user' and return Admin[]
     when personType='admin'. Also filterPersons should accept
     partial User/Admin type according to the personType.
-
+``
 Higher difficulty bonus exercise:
 
     Implement a function `getObjectKeys()` which returns proper type
@@ -48,6 +48,7 @@ interface Admin {
 }
 
 type Person = User | Admin;
+type Criteria = { age: number, occupation?: string, name?:string  };
 
 const persons: Person[] = [
     { type: 'user', name: 'Max Mustermann', age: 25, occupation: 'Chimney sweep' },
@@ -64,7 +65,7 @@ function logPerson(person: Person) {
     );
 }
 
-function filterPersons(persons: Person[], personType: string, criteria: unknown): unknown[] {
+function filterPersons(persons: Person[], personType: string, criteria: Criteria):  {
     return persons
         .filter((person) => person.type === personType)
         .filter((person) => {

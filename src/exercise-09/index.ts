@@ -71,8 +71,8 @@ type ApiResponse<T> = (
     }
 );
 
-function promisify(arg: unknown): unknown {
-    return null;
+function promisify(arg: any): any {
+    return arg;
 }
 
 const oldApi = {
